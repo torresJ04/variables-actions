@@ -27,16 +27,18 @@ jobs:
   test-env-2:
     runs-on: ubuntu-latest
     env:
-      ENV_JOB: "VALOR JOB test-env-2"
+      ENV_JOB_2: "VALOR JOB test-env-2"
     steps:  
       - name: Run job 2
         env:
-          ENV_ACTION: "VALOR ACTION Run job 2"
+          ENV_ACTION_2: "VALOR ACTION Run job 2"
         run: |
           echo "$ENV_WORKFLOW"
           echo "$ENV_JOB"
           echo "$ENV_ACTION"
+          echo "$ENV_ACTION_2"
       - name: Run second job 2
         run: |
           echo "$ENV_WORKFLOW"
           echo "$ENV_JOB"
+          echo "$ENV_JOB_2"

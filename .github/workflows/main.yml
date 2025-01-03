@@ -1,0 +1,11 @@
+name: How to use environment variables
+on:
+  workflow_dispatch:
+jobs:  
+  env:
+    runs-on: ubuntu-latest
+    steps:  
+      - name: Run job
+        run: |
+          echo "Valor abcdE"
+    
